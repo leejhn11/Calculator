@@ -1,43 +1,97 @@
 body {
-	font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
 }
 
 .calculator {
-	background-color: #f2f2f2;
-	border-radius: 10px;
-	padding: 20px;
-	margin: auto;
-	width: 300px;
-	box-shadow: 2px 2px 10px #888888;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
 
-.display {
-	background-color: #fff;
-	border-radius: 5px;
-	padding: 5px;
-	height: 30px;
-	text-align: right;
-	margin-bottom: 10px;
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  background-color: #eee;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.input {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.output {
+  font-size: 20px;
+  color: #aaa;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .button-row {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 5px;
 }
 
 .button {
-	background-color: #e6e6e6;
-	color: #333;
-	font-size: 18px;
-	border: none;
-	border-radius: 5px;
-	padding: 10px;
-	width: 70px;
-	height: 70px;
-	cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #333;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
 
-.button:hover {
-	background-color: #ccc;
+.number {
+  color: #777;
+}
+
+.operator {
+  color: #fff;
+  background-color: #ff9800;
+}
+
+.equal {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.zero {
+  width: 130px;
+}
+
+.button:active {
+  box-shadow: none;
+  transform: translateY(2px);
 }
